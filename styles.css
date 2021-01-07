@@ -1,0 +1,46 @@
+body {
+  background: #f0f8ff;
+}
+
+#cards-game {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#card-stack {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.vert { background: rgb(154, 228, 154); }
+.bleu { background: rgb(114, 114, 194); }
+.rouge { background: rgb(228, 136, 136); }
+
+.vert,
+.rouge,
+.bleu {
+  margin-right: 10px;
+  width: 120px;
+  height: 200px;
+  font-size: 30px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.playable {
+  margin-top: 0;
+  border: 3px solid rgb(233, 53, 53);
+  cursor: pointer;
+}
+
+.vert span,
+.rouge span,
+.bleu span {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  
+}
